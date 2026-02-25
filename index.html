@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class 9-10 Academic Tutor</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1>Class 9-10 Academic Tutor</h1>
+        <p>Structured syllabus-focused chatbot web starter for NCERT/board preparation.</p>
+      </header>
+
+      <section class="chat" aria-label="Chat interface">
+        <div id="messages" class="chat__messages" role="log" aria-live="polite"></div>
+
+        <form id="chatForm" class="chat__form">
+          <label class="sr-only" for="messageInput">Type your message</label>
+          <input
+            id="messageInput"
+            name="message"
+            type="text"
+            placeholder="Ask Class 9-10 syllabus question..."
+            autocomplete="off"
+            required
+          />
+          <button type="submit">Send</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
